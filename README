@@ -1,0 +1,19 @@
+Mirror of the work created by Shuhei Kubota
+http://www.vim.org/scripts/script.php?script_id=5389
+
+Usage:
+  1. Search for something.
+  2. Execute ':RougherExp'.
+     Then Vim restarts searching by rougher regexp.
+
+  Example:
+      /abc123def('a', 'zzz', 0, null);
+      or /neko999inu('p', 'hogehoge', 1, null);
+          |
+          V
+      /\a\+\d\+\a\+('\a',\s'\a\+',\s\d,\s\a\+);
+
+  Recovery:
+      To bring back your search expression, use search history.
+      (/<UP> or /<DOWN>)
+
